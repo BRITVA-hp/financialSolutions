@@ -1,0 +1,203 @@
+.services
+  &__window
+    display: none
+    overflow: hidden
+    padding-bottom: 5px
+  &__field
+    display: flex
+    align-items: stretch
+    width: min-content
+    gap: 15px
+    padding: 0 15px
+  &__card
+    width: 350px
+    background: #FFF
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 7px
+    &__button
+      font-size: 18px
+      padding: 14px 0
+      border-radius: 10px
+      width: 100%
+    &__header
+      color: #2BCCFF
+      text-align: center
+      font-size: 20px
+      font-style: normal
+      font-weight: 900
+      line-height: normal
+      margin-bottom: 10px
+    &__text
+      text-align: center
+      font-size: 16px
+      font-style: normal
+      font-weight: 500
+      line-height: normal
+      margin-bottom: 25px
+    &__items
+      margin-bottom: 25px
+    &__item
+      display: flex
+      align-items: center
+      gap: 25px
+      font-size: 16px
+      font-style: normal
+      font-weight: 500
+      line-height: normal
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+      &__img
+        width: 38px
+        min-width: 38px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__content
+      box-shadow: 2px 2px 4px rgba(126, 126, 126, 0.25)
+      border-radius: 0 0 10px 10px
+      width: 100%
+      padding: 14px 7px 25px
+      height: 100%
+    &__title
+      width: calc(100% - 14px)
+      min-height: 55px
+      text-align: center
+      color: #FFF
+      font-size: 18px
+      font-style: normal
+      font-weight: 900
+      line-height: normal
+      background: linear-gradient(to right, #45DA2D, #2BCCFF)
+      border-radius: 10px
+      box-shadow: 0 1px 6px 0 rgba(130, 130, 130, 0.25)
+      padding: 1px
+      &__wrap
+        background: #FFFFFF
+        padding: 2px
+        width: 100%
+        height: 100%
+        border-radius: 9px
+      &__text
+        background: #45DA2C
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 8px
+        padding: 10px
+  &__container
+    max-width: 1380px
+  &__row
+    display: flex
+    gap: 40px
+    align-items: center
+  &__box
+    &__text
+      margin-bottom: 35px
+      width: 385px
+    &__button
+      width: 100%
+    &__title
+      font-size: 30px
+      font-style: normal
+      font-weight: 900
+      line-height: normal
+      margin-bottom: 20px
+      span
+        color: #45DA2C
+  &__content
+    box-shadow: 2px 2px 4px rgba(126, 126, 126, 0.25)
+    border-radius:  0 0 20px 20px
+    padding: 64px 40px 50px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    gap: 30px
+    width: 100%
+    &__item
+      display: flex
+      align-items: center
+      gap: 25px
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+      &__img
+        width: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__button
+      color: #333030
+      font-size: 20px
+      box-shadow: none
+      width: 100%
+      max-width: 340px
+      &:hover
+        .button__bg--2
+          opacity: 1
+      .button__bg--1
+        z-index: 2
+        background: #fff
+        left: 2px
+        top: 2px
+        right: 2px
+        bottom: 2px
+        border-radius: 18px
+      .button__bg--2
+        z-index: 1
+    &__title
+      color: #2BCCFF
+      font-size: 35px
+      font-style: normal
+      font-weight: 900
+      line-height: normal
+      margin-bottom: 15px
+    &__text
+      margin-bottom: 20px
+  &__title
+    margin-bottom: 70px
+  &__tabs
+    border-radius: 20px
+    background: #FFF
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25)
+    background: linear-gradient(to right, #45DA2D, #2BCCFF)
+    padding: 3px
+    &__row
+      background: #fff
+      border-radius: 18px
+      padding: 3px
+      display: flex
+      justify-content: space-between
+      gap: 15px
+  &__tab
+    text-align: center
+    font-size: 20px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    padding: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    cursor: pointer
+    &:after
+      content: ''
+      position: absolute
+      height: 100%
+      width: 1px
+      top: 0
+      right: -8px
+      background: linear-gradient(90deg, #45DA2D 37.76%, #2BCCFF 100%)
+    &:last-child
+      &:after
+        display: none
+    &--active
+      color: #fff
+      font-weight: 900
+      background: #45DA2C
+      border-radius: 15px

@@ -1,3 +1,42 @@
+@media screen and (max-width: 1440px)
+  .section
+    &__title
+      font-size: 40px
+
+  .services
+    &__title
+      margin-bottom: 50px
+    &__tab
+      font-size: 18px
+      padding: 15px
+    &__content
+      padding: 40px 20px
+      &__title
+        font-size: 30px
+      &__text
+        font-size: 18px
+
+  .main
+    margin-bottom: 100px
+    &__button
+      width: 400px
+    &__card
+      &__text
+        font-size: 18px
+      &__title
+        font-size: 40px
+        &__span
+          font-size: 16px
+    &__box
+      margin-bottom: 100px
+    &__container
+      background: url('../img/main/bg.png') no-repeat right calc(100% - 50px)/500px
+    &__title
+      font-size: 45px
+    &__text
+      font-size: 22px
+      max-width: 600px
+
 @media screen and (max-width: 1400px)
   .header
     &__logo
@@ -8,7 +47,54 @@
     &__link
       font-size: 18px
 
+@media screen and (max-width: 1200px)
+  .services
+    &__content
+      display: none
+    &__tabs
+      display: none
+    &__window
+      display: block
+
+  .main
+    &__container
+      background: url('../img/main/bg.png') no-repeat right calc(100% - 50px)/450px
+      padding-top: 60px
+
 @media screen and (max-width: 991px)
+  .section
+    &__title
+      font-size: 28px
+
+  .main
+    margin-bottom: 80px
+    &__title
+      font-size: 35px
+      margin-bottom: 10px
+    &__text
+      font-size: 18px
+      max-width: 500px
+    &__button
+      font-size: 18px
+      padding: 14px 0
+      border-radius: 10px
+      width: 100%
+      max-width: 335px
+    &__row
+      gap: 10px
+    &__card
+      border-radius: 14px
+      gap: 15px
+      padding: 20px
+      flex-direction: column
+      text-align: center
+      &__title
+        font-size: 38px
+      &__text
+        font-size: 16px
+    &__container
+      background: url('../img/main/bgM.png') no-repeat right calc(100% - 100px)/300px
+
   .modal
     &__dialog
       border: 1px solid #E0E0E0
@@ -57,6 +143,34 @@
       height: 40px
       img
         width: 22px
+
+@media screen and (max-width: 767px)
+  .main
+    padding-top: 35px
+    &__text
+      margin-bottom: 15px
+    &__box
+      margin-bottom: 20px
+    &__container
+      max-width: 500px
+    &__card
+      flex-direction: row
+      padding: 24px 20px
+      text-align: left
+      max-width: 335px
+    &__row
+      flex-direction: column
+      align-items: center
+    &__container
+      padding: 0
+      background: none
+    &__img
+      display: block
+      margin: auto
+      transform: translateX(-10px)
+    &__button
+      margin: auto
+      display: block
 
 @media screen and (max-width: 575px)
   .header
