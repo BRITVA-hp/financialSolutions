@@ -1,14 +1,35 @@
 .services
+  margin-bottom: 140px
+  &__interface
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 10px
+    margin-bottom: 35px
+  &__dots
+    display: flex
+    align-items: center
+    gap: 3px
+  &__dot
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    background: rgba(51, 48, 48, 0.15)
+    &--active
+      width: 12px
+      height: 12px
+      background: rgba(43, 204, 255, 0.30)
   &__window
     display: none
     overflow: hidden
-    padding-bottom: 5px
+    padding-bottom: 15px
   &__field
     display: flex
     align-items: stretch
     width: min-content
     gap: 15px
     padding: 0 15px
+    transition: 0.3s
   &__card
     width: 350px
     background: #FFF

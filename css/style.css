@@ -654,6 +654,116 @@ body {
   line-height: 120%;
   padding: 19px 20px;
 }
+.modal-quiz__range-box {
+  width: 100%;
+  margin-bottom: 150px;
+}
+.modal-quiz__range {
+  position: relative;
+  height: 4px;
+  background: #D3D3D3;
+  border-radius: 2px;
+}
+.modal-quiz__range__value {
+  font-size: 14px;
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #45DA2D 37.76%, #2BCCFF 100%);
+  white-space: nowrap;
+  font-weight: 700;
+  padding: 5px 10px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+}
+.modal-quiz__range__value:focus {
+  outline: none;
+}
+.modal-quiz__range__input::-webkit-slider-thumb {
+  width: 22px;
+  height: 22px;
+}
+.modal-quiz__range__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background: none;
+  opacity: 0;
+  cursor: pointer;
+  height: 40px;
+  left: 0;
+  top: -20px;
+  line-height: 40px;
+}
+.modal-quiz__range__track {
+  position: absolute;
+  height: 100%;
+  background: #45DA2D;
+  display: block;
+  z-index: 1;
+  border-radius: 2px;
+  width: 10%;
+}
+.modal-quiz__range__track:after {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  transform: translate(50%, calc(-50% + 2px));
+  cursor: pointer;
+  z-index: 6;
+  background: #2BCCFF;
+}
+.modal-quiz__range-min-val {
+  position: absolute;
+  left: -2px;
+  bottom: -26px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 100%;
+}
+.modal-quiz__range-max-val {
+  position: absolute;
+  right: -5px;
+  bottom: -28px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 100%;
+}
+.modal-quiz__dialog {
+  border-radius: 20px;
+  background: #FFF;
+  width: 100%;
+  max-width: 1270px;
+  position: relative;
+  padding: 60px 90px 70px;
+}
+.modal-quiz__close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  cursor: pointer;
+}
+.modal-quiz__question {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 0 100px;
+}
+.modal-quiz__button-group {
+  display: flex;
+  gap: 20px;
+}
+.modal-quiz__button {
+  width: 380px;
+}
 
 .main {
   margin-bottom: 140px;
@@ -732,10 +842,36 @@ body {
   margin-left: 5px;
 }
 
+.services {
+  margin-bottom: 140px;
+}
+.services__interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+.services__dots {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.services__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(51, 48, 48, 0.15);
+}
+.services__dot--active {
+  width: 12px;
+  height: 12px;
+  background: rgba(43, 204, 255, 0.3);
+}
 .services__window {
   display: none;
   overflow: hidden;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 .services__field {
   display: flex;
@@ -744,6 +880,7 @@ body {
   width: min-content;
   gap: 15px;
   padding: 0 15px;
+  transition: 0.3s;
 }
 .services__card {
   width: 350px;
@@ -1037,6 +1174,9 @@ body {
   .section__title {
     font-size: 40px;
   }
+  .services {
+    margin-bottom: 100px;
+  }
   .services__title {
     margin-bottom: 50px;
   }
@@ -1095,6 +1235,25 @@ body {
   }
 }
 @media screen and (max-width: 1200px) {
+  .services {
+    padding: 0;
+  }
+  .services__title {
+    padding: 0 20px;
+  }
+  .services__box {
+    padding: 0 20px;
+    margin: auto;
+    text-align: center;
+  }
+  .services__box__text {
+    width: auto;
+  }
+  .services__box__button {
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 18px;
+  }
   .services__content {
     display: none;
   }
@@ -1112,6 +1271,45 @@ body {
 @media screen and (max-width: 991px) {
   .section__title {
     font-size: 28px;
+  }
+  .modal-quiz__dialog {
+    max-width: 400px;
+    padding: 50px 12px 60px;
+    border-radius: 10px;
+  }
+  .modal-quiz__question {
+    max-width: 300px;
+    margin-bottom: 50px;
+  }
+  .modal-quiz__close {
+    width: 20px;
+    top: 15px;
+    right: 20px;
+  }
+  .modal-quiz__range-box {
+    margin-bottom: 130px;
+  }
+  .modal-quiz__button-group {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .modal-quiz__button {
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 14px 0;
+    width: 100%;
+  }
+  .services {
+    margin-bottom: 80px;
+  }
+  .services__title {
+    margin-bottom: 28px;
+  }
+  .services__box__title {
+    font-size: 26px;
+  }
+  .services__box__text {
+    font-size: 18px;
   }
   .main {
     margin-bottom: 80px;

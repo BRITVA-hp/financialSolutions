@@ -86,3 +86,99 @@
         font-weight: 500
         line-height: 120%
         padding: 19px 20px
+    &-quiz
+        &__range-box
+            width: 100%
+            margin-bottom: 150px
+        &__range
+            position: relative
+            height: 4px
+            background: #D3D3D3
+            border-radius: 2px
+            &__value
+                font-size: 14px
+                color: #FFFFFF
+                background: linear-gradient(90deg, #45DA2D 37.76%, #2BCCFF 100%)
+                white-space: nowrap
+                font-weight: 700
+                padding: 5px 10px
+                display: block
+                width: 100%
+                margin-bottom: 20px
+                text-align: center
+                border: none
+                &:focus
+                    outline: none
+            &__input::-webkit-slider-thumb
+                width: 22px
+                height: 22px
+            &__input
+                -webkit-appearance: none
+                -moz-appearance: none
+                appearance: none
+                width: 100%
+                position: absolute
+                z-index: 2
+                background: none
+                opacity: 0
+                cursor: pointer
+                height: 40px
+                left: 0
+                top: -20px
+                line-height: 40px
+            &__track
+                position: absolute
+                height: 100%
+                background: #45DA2D
+                display: block
+                z-index: 1
+                border-radius: 2px
+                width: 10%
+                &:after
+                    width: 24px
+                    height: 24px
+                    position: absolute
+                    content: ''
+                    right: 0
+                    top: 0
+                    transform: translate(50%, calc(-50% + 2px))
+                    cursor: pointer
+                    z-index: 6
+                    background: #2BCCFF
+            &-min-val
+                position: absolute
+                left: -2px
+                bottom: -26px
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 100%
+            &-max-val
+                position: absolute
+                right: -5px
+                bottom: -28px
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 100%
+        &__dialog
+            border-radius: 20px
+            background: #FFF
+            width: 100%
+            max-width: 1270px
+            position: relative
+            padding: 60px 90px 70px
+        &__close
+            position: absolute
+            top: 25px
+            right: 30px
+            cursor: pointer
+        &__question
+            text-align: left
+            max-width: 700px
+            margin: 0 0 100px
+        &__button-group
+            display: flex
+            gap: 20px
+        &__button
+            width: 380px

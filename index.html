@@ -375,7 +375,7 @@
           <path d="M6.04525 10L1 5.31226L5.94819 1M1.70513 5.31226L14 5.31226" stroke="#2BCCFF" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
 
-        <div class="services__interface__dots"></div>
+        <div class="services__dots"></div>
 
         <svg class="services__arrow services__arrow--next" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8.95475 10L14 5.31226L9.05181 1M13.2949 5.31226L1 5.31226" stroke="#2BCCFF" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -488,7 +488,7 @@
   </div>
 </div>
 
-<div class="modal">
+<div class="modal modal-main">
   <div class="modal__container">
     <div class="modal__dialog">
       <img src="img/close.svg" alt="close" class="modal__close">
@@ -514,6 +514,39 @@
     </div>
   </div>
 </div>
+<!-- /.modal modal-main -->
+
+<div class="modal modal--active modal-quiz">
+  <div class="modal__container modal-quiz__container">
+    <div class="modal-quiz__dialog">
+      <img class="modal-quiz__close" src="img/close.svg" alt="close">
+      <h3 class="modal-quiz__question section__title">Укажите планируемую сумму кредита</h3>
+
+      <div class="modal-quiz__range-box">
+        <input value="1 500 000" type="text" class="modal-quiz__range__value">
+        <div class="modal-quiz__range">
+          <div class="modal-quiz__range-min-val">100 000 руб</div>
+          <span class="modal-quiz__range__track">
+          </span>
+          <input class="modal-quiz__range__input" type="range" min="100000" max="20000000" value="1500000" step="1">
+          <div class="modal-quiz__range-max-val">20 000 000 руб</div>
+        </div>
+      </div>
+
+      <div class="modal-quiz__button-group">
+        <button class="button button--back modal-quiz__button">Назад</button>
+
+        <button class="modal-quiz__button button">
+          <span class="button__bg button__bg--1"></span>
+          <span class="button__bg button__bg--2"></span>
+          <span class="button__text">Дальше</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /.modal modal-quiz -->
 
 <script src="js/script.js"></script>
 

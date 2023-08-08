@@ -4,6 +4,7 @@
       font-size: 40px
 
   .services
+    margin-bottom: 100px
     &__title
       margin-bottom: 50px
     &__tab
@@ -49,6 +50,19 @@
 
 @media screen and (max-width: 1200px)
   .services
+    padding: 0
+    &__title
+      padding: 0 20px
+    &__box
+      padding: 0 20px
+      margin: auto
+      text-align: center
+      &__text
+        width: auto
+      &__button
+        padding: 15px 0
+        border-radius: 10px
+        font-size: 18px
     &__content
       display: none
     &__tabs
@@ -65,6 +79,40 @@
   .section
     &__title
       font-size: 28px
+
+  .modal
+    &-quiz
+      &__dialog
+        max-width: 400px
+        padding: 50px 12px 60px
+        border-radius: 10px
+      &__question
+        max-width: 300px
+        margin-bottom: 50px
+      &__close
+        width: 20px
+        top: 15px
+        right: 20px
+      &__range-box
+        margin-bottom: 130px
+      &__button-group
+        flex-direction: column-reverse
+        gap: 10px
+      &__button
+        font-size: 18px
+        border-radius: 10px
+        padding: 14px 0
+        width: 100%
+
+  .services
+    margin-bottom: 80px
+    &__title
+      margin-bottom: 28px
+    &__box
+      &__title
+        font-size: 26px
+      &__text
+        font-size: 18px
 
   .main
     margin-bottom: 80px
