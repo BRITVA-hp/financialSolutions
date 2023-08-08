@@ -80,30 +80,6 @@
     &__title
       font-size: 28px
 
-  .modal
-    &-quiz
-      &__dialog
-        max-width: 400px
-        padding: 50px 12px 60px
-        border-radius: 10px
-      &__question
-        max-width: 300px
-        margin-bottom: 50px
-      &__close
-        width: 20px
-        top: 15px
-        right: 20px
-      &__range-box
-        margin-bottom: 130px
-      &__button-group
-        flex-direction: column-reverse
-        gap: 10px
-      &__button
-        font-size: 18px
-        border-radius: 10px
-        padding: 14px 0
-        width: 100%
-
   .services
     margin-bottom: 80px
     &__title
@@ -178,6 +154,69 @@
       margin-top: 15px
     &__policy
       font-size: 10px
+
+    &-last
+      &__button
+        border-radius: 10px
+        font-size: 18px
+        margin-bottom: 15px
+      &__policy
+        font-size: 10px
+      &__close
+        width: 18px
+        height: 18px
+        top: 14px
+        right: 14px
+      &__dialog
+        max-width: 400px
+        padding: 50px 20px 40px
+        border-radius: 2px
+        border: 1px solid #E0E0E0
+        border-top-color: #2BCCFF
+        &::before
+          height: 6px
+      &__title
+        font-size: 18px
+        margin-bottom: 5px
+      &__text
+        font-size: 14px
+        margin-bottom: 20px
+      &__row
+        flex-direction: column
+        gap: 10px
+        margin-bottom: 15px
+      &__input
+        font-size: 16px
+        padding: 15px 9px
+        border-radius: 5px
+        border: 1px solid #D9E0E8
+
+    &-quiz
+      &__radio
+        margin-bottom: 10px
+        &__text
+          font-size: 16px
+      &__dialog
+        max-width: 400px
+        padding: 50px 12px 60px
+        border-radius: 10px
+      &__question
+        max-width: 300px
+        margin-bottom: 50px
+      &__close
+        width: 20px
+        top: 15px
+        right: 20px
+      &__range-box
+        margin-bottom: 130px
+      &__button-group
+        flex-direction: column-reverse
+        gap: 10px
+      &__button
+        font-size: 18px
+        border-radius: 10px
+        padding: 14px 0
+        width: 100%
 
   .header
     padding-top: 6px
