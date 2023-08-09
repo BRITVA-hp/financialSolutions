@@ -1,0 +1,56 @@
+.cash
+  margin-bottom: 140px
+  &__row
+    display: flex
+    align-items: stretch
+    gap: 40px
+    justify-content: space-between
+  &__block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 575px
+  &__button
+    width: 100%
+    max-width: 380px
+  &__title
+    text-align: left
+  &__box
+    display: flex
+    flex-wrap: wrap
+    gap: 15px 24px
+  &__card
+    width: calc(50% - 12px)
+    background: linear-gradient(90deg, #45DA2D 37.76%, #2BCCFF 100%)
+    padding: 2px
+    border-radius: 20px
+    min-height: 150px
+    &--blue
+      .cash__card__row
+        background: rgba(43, 204, 255, 0.05)
+    &__content
+      background: #fff
+      width: 100%
+      height: 100%
+      border-radius: 18px
+    &__row
+      width: 100%
+      height: 100%
+      display: flex
+      align-items: center
+      padding: 10px 20px
+      gap: 20px
+    &__num
+      color: #45DA2C
+      font-size: 55px
+      font-style: normal
+      font-weight: 700
+      line-height: normal
+    &__title
+      font-size: 24px
+      font-style: normal
+      font-weight: 700
+      line-height: normal
+      margin-bottom: 8px
+    &__text
+      font-size: 18px

@@ -3,6 +3,55 @@
     &__title
       font-size: 40px
 
+  .case
+    margin-bottom: 100px
+    &__row
+      gap: 10px
+    &__title
+      margin-bottom: 50px
+      max-width: 510px
+    &__card
+      border-radius: 10px
+      &__text
+        padding: 15px 10px
+        font-size: 16px
+        border-radius: 8px
+      &__content
+        border-radius: 8px
+
+  .help
+    padding-top: 60px
+    padding-bottom: 60px
+    margin-bottom: 100px
+    &__row
+      gap: 20px
+    &__card
+      &__content
+        gap: 10px
+      &__title
+        font-size: 20px
+      &__text
+        font-size: 16px
+      &__num
+        font-size: 20px
+    &__text
+      font-size: 18px
+      max-width: 440px
+
+  .ok
+    margin-bottom: 100px
+    &__box
+      max-width: 500px
+    &__card
+      padding: 30px 40px 30px 20px
+      &__title
+        font-size: 20px
+      &__text
+        font-size: 16px
+      &__num
+        font-size: 70px
+
+
   .services
     margin-bottom: 100px
     &__title
@@ -49,6 +98,10 @@
       font-size: 18px
 
 @media screen and (max-width: 1200px)
+  .ok
+    &__title
+      font-size: 34px
+
   .services
     padding: 0
     &__title
@@ -79,6 +132,66 @@
   .section
     &__title
       font-size: 28px
+
+  .case
+    margin-bottom: 80px
+    &__title
+      max-width: 370px
+      margin-bottom: 35px
+
+  .help
+    padding-top: 40px
+    padding-bottom: 40px
+    margin-bottom: 80px
+    &__button
+      font-size: 18px
+      padding: 14px 0
+      max-width: 300px
+      border-radius: 10px
+    &__row
+      gap: 10px
+      margin-bottom: 20px
+    &__container
+      border-radius: 10px
+      padding: 30px 20px
+    &__title
+      margin-bottom: 10px
+      max-width: 300px
+    &__text
+      font-size: 16px
+      margin-bottom: 24px
+    &__card
+      border-radius: 14px
+      height: auto
+      width: calc(33% - 6px)
+      &__content
+        padding: 10px
+        border-radius: 12px
+      &__title
+        font-size: 18px
+        margin-bottom: 4px
+      &__text
+        font-size: 14px
+
+  .ok
+    margin-bottom: 80px
+    &__box
+      max-width: 380px
+    &__row
+      gap: 35px
+    &__card
+      align-items: flex-start
+      padding: 15px 15px 15px 8px
+      border-radius: 10px
+      gap: 10px
+      &__title
+        font-size: 16px
+        margin-bottom: 4px
+      &__text
+        font-size: 14px
+      &__num
+        font-size: 45px
+        line-height: 100%
 
   .services
     margin-bottom: 80px
@@ -232,6 +345,36 @@
         width: 22px
 
 @media screen and (max-width: 767px)
+  .case
+    &__container
+      max-width: 500px
+    &__card
+      width: 90%
+      &--big
+        width: 100%
+      &__text
+        justify-content: flex-start
+        padding: 15px 10px
+        text-align: left
+    &__row
+      flex-direction: column
+      align-items: flex-start
+
+  .help
+    &__container
+      max-width: 500px
+    &__card
+      width: 100%
+      min-height: 80px
+
+  .ok
+    &__row
+      flex-direction: column
+    &__container
+      max-width: 500px
+    &__box
+      max-width: none
+
   .main
     padding-top: 35px
     &__text
@@ -260,6 +403,12 @@
       display: block
 
 @media screen and (max-width: 575px)
+  .help
+    padding-left: 8px
+    padding-right: 8px
+    &__container
+      padding: 30px 12px
+
   .header
     &__box
       gap: 20px
