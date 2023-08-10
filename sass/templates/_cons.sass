@@ -1,0 +1,133 @@
+.cons
+  margin-bottom: 140px
+  &__card
+    width: 100%
+    position: relative
+    padding: 10px 50px 10px 25px
+    display: flex
+    align-items: center
+    gap: 20px
+    min-height: 128px
+    margin-bottom: 25px
+    &:last-child
+      margin-bottom: 0
+    &__color
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      &--blue
+        background: rgba(43, 204, 255, 0.10)
+    &__border
+      background: linear-gradient(90deg, #45DA2D 37.76%, #2BCCFF 100%)
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      padding: 2px
+      border-radius: 20px
+      transform: skew(15deg)
+      transform-origin: right bottom
+    &__bg
+      background: #FFFFFF
+      width: 100%
+      height: 100%
+      border-radius: 18px
+      position: relative
+      overflow: hidden
+    &__num
+      color: #45DA2C
+      font-size: 55px
+      font-style: normal
+      font-weight: 700
+      line-height: normal
+      position: relative
+    &__text
+      font-size: 24px
+      font-style: normal
+      font-weight: 500
+      line-height: normal
+      position: relative
+  &__title
+    max-width: 920px
+    margin-bottom: 70px
+  &__row
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 70px
+  &__form
+    border-radius: 20px
+    background: #333030
+    padding: 80px 35px 40px
+    width: 100%
+    max-width: 550px
+    color: #fff
+    text-align: center
+    &__title
+      font-size: 38px
+      font-style: normal
+      font-weight: 700
+      line-height: normal
+      margin-bottom: 7px
+    &__text
+      font-size: 24px
+      font-style: normal
+      font-weight: 500
+      line-height: normal
+      margin-bottom: 45px
+  &__input-group
+    margin-bottom: 10px
+  &__policy
+    cursor: pointer
+    display: flex
+    align-items: center
+    gap: 12px
+    width: 100%
+    max-width: 410px
+    margin: 0 auto 15px
+    &__ok
+      display: block
+      width: 23px
+      height: 23px
+      border-radius: 5px
+      background: linear-gradient(90deg, #45DA2D 37.76%, #2BCCFF 100%)
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: 1px
+        right: 1px
+        top: 1px
+        bottom: 1px
+        background: #333030
+        border-radius: 4px
+      &::after
+        content: ''
+        width: 30px
+        height: 15px
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(calc(-50% + 2px), calc(-50% - 2px))
+        background: url("../img/ok.svg") no-repeat center/contain
+        display: none
+    &__input
+      display: none
+      &:checked + .cons__policy__ok
+        &::after
+          display: block
+    &__text
+      font-size: 14px
+      font-style: normal
+      font-weight: 500
+      line-height: normal
+      text-align: left
+      a
+        color: #fff
+  &__button
+    width: 100%
